@@ -65,8 +65,7 @@ namespace Microsoft.IIS.Administration {
                     // app.UseWindowsAuthentication ensures (if needed) the request is authenticated to proceed
                     o.Authentication.AllowAnonymous = true;
                     })
-                    .Build()
-                    .UseHttps())
+                    .Build())
                 {
 
                     if (runAsAService)
