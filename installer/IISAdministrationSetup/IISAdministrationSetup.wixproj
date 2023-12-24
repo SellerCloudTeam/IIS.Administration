@@ -6,7 +6,7 @@
     <ArtifactsRoot>$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), `.gitignore`))\dist</ArtifactsRoot>
     <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
-    <ProductVersion>6.0.1</ProductVersion>
+    <ProductVersion>6.0.2</ProductVersion>
     <ProjectGuid>dddaee12-ea07-4818-9ff8-d9da8ea18c1e</ProjectGuid>
     <SchemaVersion>2.0</SchemaVersion>
     <OutputName>IISAdministrationSetup</OutputName>
