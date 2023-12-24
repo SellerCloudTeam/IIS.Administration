@@ -51,7 +51,6 @@ namespace Microsoft.IIS.Administration.Cors
                                             Net.Http.Headers.HeaderNames.Allow,
                                             Net.Http.Headers.HeaderNames.WWWAuthenticate);
                 cBuilder.WithMethods("GET","HEAD","POST","PUT","PATCH","DELETE","OPTIONS","DEBUG");
-                cBuilder.AllowCredentials();
 
                 IEnumerable<string> allowedOrigins = GetAllowedOrigins(corsConfiguration);
 
@@ -61,6 +60,7 @@ namespace Microsoft.IIS.Administration.Cors
                 }
                 else
                 {
+                    cBuilder.AllowCredentials();
                     cBuilder.WithOrigins(allowedOrigins.ToArray());
                 }
             });
